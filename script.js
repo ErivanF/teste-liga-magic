@@ -30,7 +30,7 @@ const carouselImages = [...cardData.imageSecondary];
 const displayCarousel = () => {
   const display = document.getElementById("carouselDisplay");
   display.innerHTML = "";
-  for (i = 0; i < carouselImages.length; i++) {
+  for (let i = 0; i < carouselImages.length; i++) {
     const newImage = document.createElement("img");
     newImage.src = carouselImages[i];
     display.appendChild(newImage);
@@ -84,9 +84,21 @@ document.getElementById("addToList").addEventListener("click", () => {
 
 //Mostrar informações da carta
 document.getElementById("color").innerText = cardData.color;
-for (i = 0; i < cardData.cost; i++) {
+for (let i = 0; i < cardData.cost; i++) {
   const image = document.createElement("img");
   image.src = "assets/icons/mana.svg";
   document.getElementById("cost").appendChild(image);
 }
 document.getElementById("type").innerText = cardData.type;
+
+//Mostrar preços
+const prices = document.getElementById("price");
+const reais = new Intl.NumberFormat("pt-BR", {
+  style: "currency",
+  currency: "brl",
+});
+for (let i = 0; i < cardData.price.length; i++) {
+  const price = document.createElement("span");
+  price.innerText = reais.format(cardData.price[i]);
+  prices.appendChild(price);
+}

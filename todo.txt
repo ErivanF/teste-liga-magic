@@ -1,14 +1,4 @@
-Content:
-    Preços:
-        Título:
-            Título
-            Link
-        Chart:
-            Tipo
-            Preços:
-                Normal
-                Médio
-                Alto
+
     
     
     
