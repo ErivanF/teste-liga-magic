@@ -1,18 +1,4 @@
 Content:
-    Informações da carta:
-        Título:
-            Título
-            Link
-        Informações:
-            Cor:
-                Nome
-                Dado
-            Custo:
-                Nome
-                Dado
-            Tipo:
-                Nome
-                Dado
     Preços:
         Título:
             Título

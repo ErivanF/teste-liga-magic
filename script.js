@@ -61,7 +61,7 @@ document.getElementById("labelAbrr").innerText = cardData.label.abbreviation;
 document.getElementById("titlePT").innerText = cardData.name;
 document.getElementById("titleOriginal").innerText = cardData.nameOriginal;
 
-//número
+//Modar o número a ser adicionado
 const amountInput = document.getElementById("amountInput");
 document.getElementById("addButton").addEventListener("click", () => {
   amountInput.value++;
@@ -76,9 +76,17 @@ amountInput.addEventListener("change", (e) => {
     e.target.value = 0;
   }
 });
-console.log(document.getElementById("addToList"));
 document.getElementById("addToList").addEventListener("click", () => {
   if (amountInput.value > 0) {
     alert("Adicinadas " + amountInput.value + " cartas à sua lista");
   }
 });
+
+//Mostrar informações da carta
+document.getElementById("color").innerText = cardData.color;
+for (i = 0; i < cardData.cost; i++) {
+  const image = document.createElement("img");
+  image.src = "assets/icons/mana.svg";
+  document.getElementById("cost").appendChild(image);
+}
+document.getElementById("type").innerText = cardData.type;
