@@ -1,10 +1,14 @@
-#display {
-  width: 30vw;
+body {
+  font-family: Jost;
+  font-size: 14px;
+}
 
+#display {
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
+  width: 30vw;
   margin: 0;
   border-right: 1px solid grey;
 }
@@ -34,4 +38,27 @@
 }
 #carouselDisplay img {
   max-width: 25%;
+}
+
+main {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  width: 70vw;
+  overflow-x: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+}
+main .breadcrumb {
+  font-weight: 400;
+  line-height: 20px;
+}
+
+main .breadcrumb span + span::before {
+  height: 5px;
+  border: 1px solid grey;
+  margin: 0 5px;
+  display: inline-block;
+  content: "";
 }
