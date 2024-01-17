@@ -13,16 +13,28 @@ mainImage.src = cardData.imageMain;
 
 //mostrar carrossel
 const carouselImages = [...cardData.imageSecondary];
-let carouselIndex = 0;
-const displayCarousel = (index) => {
+
+const displayCarousel = () => {
   const display = document.getElementById("carouselDisplay");
   display.innerHTML = "";
-  if (carouselImages.length < 3) {
-    for (i = 0; i < carouselImages.length; i++) {
-      const newImage = document.createElement("img");
-      newImage.src = carouselImages[i];
-      display.appendChild(newImage);
-    }
+  for (i = 0; i < carouselImages.length; i++) {
+    const newImage = document.createElement("img");
+    newImage.src = carouselImages[i];
+    display.appendChild(newImage);
   }
 };
-displayCarousel(carouselIndex);
+const moveCarouselLeft = () => {
+  carouselImages.push(carouselImages.shift());
+  displayCarousel();
+};
+const moveCarouselRight = () => {
+  carouselImages.unshift(carouselImages.pop());
+  displayCarousel();
+};
+document.getElementById("buttonLeft").addEventListener("click", (e) => {
+  moveCarouselLeft();
+});
+document.getElementById("buttonRight").addEventListener("click", (e) => {
+  moveCarouselRight();
+});
+displayCarousel();
