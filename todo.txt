@@ -10,7 +10,7 @@ Content:
                 Sigla
                 Seta
     Título:
-        Títulos:g
+        Títulos:
             Título em portuguÊs
             Título original
         Ícones:
