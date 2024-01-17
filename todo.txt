@@ -1,11 +1,8 @@
 Content:
-    Título:
-        Títulos:
-            Título em portuguÊs
-            Título original
-        Ícones:
-            Favorito
-            Opções
+
+    Ícones:
+        Favorito
+        Opções
     Lista de compras:
         Título:
             Título

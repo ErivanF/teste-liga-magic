@@ -52,3 +52,7 @@ displayCarousel();
 document.getElementById("labelNumber").innerText = cardData.label.number;
 document.getElementById("labelName").innerText = cardData.label.name;
 document.getElementById("labelAbrr").innerText = cardData.label.abbreviation;
+
+//mostrar títulos
+document.getElementById("titlePT").innerText = cardData.name;
+document.getElementById("titleOriginal").innerText = cardData.nameOriginal;
