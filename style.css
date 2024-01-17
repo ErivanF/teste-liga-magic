@@ -1,0 +1,8 @@
+#display {
+  max-width: 30vw;
+}
+
+#display #mainImage {
+  margin: 10%;
+  max-width: 80%;
+}
