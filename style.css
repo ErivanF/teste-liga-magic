@@ -6,3 +6,8 @@
   margin: 10%;
   max-width: 80%;
 }
+#carousel {
+  display: flex;
+  max-height: 15vh;
+  width: 100%;
+}

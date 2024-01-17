@@ -1,5 +1,4 @@
 Display:
-    Imagem
     Carrossel:
         Barras de navegação
         Imagens
