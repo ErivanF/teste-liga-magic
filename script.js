@@ -10,7 +10,11 @@ const cardData = {
     name: "Dominaria Remastered",
     abbreviation: "DMR",
   },
+  name: "Contramágica",
+  nameOriginal: "Counterspell",
 };
+//Título
+document.title = "LigaMagic - " + cardData.name;
 
 //mostrar imagem principal
 const mainImage = document.getElementById("mainImage");

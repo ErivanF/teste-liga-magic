@@ -1,14 +1,4 @@
 Content:
-    Selecionar edição:
-        Label:
-            Ícone
-            Label:
-                Número
-                Nome
-            Sigla:
-                Stroke
-                Sigla
-                Seta
     Título:
         Títulos:
             Título em portuguÊs
