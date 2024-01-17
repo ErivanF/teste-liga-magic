@@ -1,5 +1,4 @@
 Content:
-    Breadcrumb: Exibir seções do endereço
     Selecionar edição:
         Label:
             Ícone

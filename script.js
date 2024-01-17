@@ -5,6 +5,11 @@ const cardData = {
     "assets/images/carousel2.png",
     "assets/images/carousel1.png",
   ],
+  label: {
+    number: "045",
+    name: "Dominaria Remastered",
+    abbreviation: "DMR",
+  },
 };
 
 //mostrar imagem principal
@@ -38,3 +43,8 @@ document.getElementById("buttonRight").addEventListener("click", (e) => {
   moveCarouselRight();
 });
 displayCarousel();
+
+//mostrar label
+document.getElementById("labelNumber").innerText = cardData.label.number;
+document.getElementById("labelName").innerText = cardData.label.name;
+document.getElementById("labelAbrr").innerText = cardData.label.abbreviation;
