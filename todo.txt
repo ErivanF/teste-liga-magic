@@ -1,22 +1,4 @@
 Content:
-
-    Ícones:
-        Favorito
-        Opções
-    Lista de compras:
-        Título:
-            Título
-            Subtítulo
-        Botões:
-            Contador:
-                Contador:
-                    Ícone +
-                    Número
-                    Ícone -
-                Ícone de filtro
-            Botão adicionar:
-                Ícone
-                Texto
     Informações da carta:
         Título:
             Título

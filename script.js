@@ -12,6 +12,10 @@ const cardData = {
   },
   name: "Contramágica",
   nameOriginal: "Counterspell",
+  color: "Azul",
+  cost: 2,
+  type: "Mágica Instantânea",
+  price: [6.28, 9.39, 14.0],
 };
 //Título
 document.title = "LigaMagic - " + cardData.name;
@@ -56,3 +60,25 @@ document.getElementById("labelAbrr").innerText = cardData.label.abbreviation;
 //mostrar títulos
 document.getElementById("titlePT").innerText = cardData.name;
 document.getElementById("titleOriginal").innerText = cardData.nameOriginal;
+
+//número
+const amountInput = document.getElementById("amountInput");
+document.getElementById("addButton").addEventListener("click", () => {
+  amountInput.value++;
+});
+document.getElementById("removeButton").addEventListener("click", () => {
+  if (amountInput.value >= 1) {
+    amountInput.value--;
+  }
+});
+amountInput.addEventListener("change", (e) => {
+  if (e.target.value < 0) {
+    e.target.value = 0;
+  }
+});
+console.log(document.getElementById("addToList"));
+document.getElementById("addToList").addEventListener("click", () => {
+  if (amountInput.value > 0) {
+    alert("Adicinadas " + amountInput.value + " cartas à sua lista");
+  }
+});

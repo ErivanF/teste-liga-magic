@@ -1,8 +1,11 @@
 :root {
   --font-grey: #9b9b98;
+  --font-dark-grey: #474745;
   --font-black: #04050c;
   --bacground-grey: #ececea;
   --shadow: #04050c1a;
+  --button-color: #127119;
+  --button-text: #daedce;
 }
 
 body {
@@ -138,4 +141,81 @@ main .buy {
   background-color: var(--bacground-grey);
   box-shadow: 0px 4px 8px 0px var(--shadow);
   padding: 14px 20px 18px 20px;
+}
+
+main .buy h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--font-dark-grey);
+}
+
+main .buy p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--font-grey);
+}
+
+main .buy .amount {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 30px;
+  border: 1px solid var(--font-grey);
+  padding: 5px;
+  width: fit-content;
+}
+main .buy .addToCart {
+  display: flex;
+}
+main .buy .addToCart .filter {
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  box-shadow: 0px 4px 8px 0px #04050c1a;
+  box-sizing: border-box;
+  margin-left: 10px;
+  background-color: var(--bacground-grey);
+}
+main .buy .amount input {
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  width: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+main .buy button {
+  background-color: var(--button-color);
+  color: var(--button-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 12px;
+}
+main .buy button img {
+  margin: 5px;
+  display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: inherit;
 }
