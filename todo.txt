@@ -1,0 +1,73 @@
+Display:
+    Imagem
+    Carrossel:
+        Barras de navegação
+        Imagens
+Content:
+    Card Info:
+        Breadcrumb: Exibir seções do endereço
+        Selecionar edição:
+            Label:
+                Ícone
+                Label:
+                    Número
+                    Nome
+                Sigla:
+                    Stroke
+                    Sigla
+                    Seta
+        Título:
+            Títulos:
+                Título em portuguÊs
+                Título original
+            Ícones:
+                Favorito
+                Opções
+        Lista de compras:
+            Título:
+                Título
+                Subtítulo
+            Botões:
+                Contador:
+                    Contador:
+                        Ícone +
+                        Número
+                        Ícone -
+                    Ícone de filtro
+                Botão adicionar:
+                    Ícone
+                    Texto
+        Informações da carta:
+            Título:
+                Título
+                Link
+            Informações:
+                Cor:
+                    Nome
+                    Dado
+                Custo:
+                    Nome
+                    Dado
+                Tipo:
+                    Nome
+                    Dado
+        Preços:
+            Título:
+                Título
+                Link
+            Chart:
+                Tipo
+                Preços:
+                    Normal
+                    Médio
+                    Alto
+
+        
+
+
+        
+
+        
+    
+            
+
